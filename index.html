@@ -246,7 +246,7 @@ footer{border-top:1px solid var(--rule);margin-top:40px}
   <p class="lede">From atoms on Anton&nbsp;3 to coarse-grained beads, we choose the resolution the question needs and check our models against experiment.</p>
 
   <figure style="margin-bottom:8px">
-    <img class="hero" src="images/anton.jpg" width="1280" height="716" alt="Overlaid snapshots from a long all-atom simulation of the nucleosome core particle, showing the range of positions each histone tail explores; histone core colored H3 teal, H4 pink, H2A gold, H2B orange">
+    <img class="hero" src="anton.jpg" width="1280" height="716" alt="Overlaid snapshots from a long all-atom simulation of the nucleosome core particle, showing the range of positions each histone tail explores; histone core colored H3 teal, H4 pink, H2A gold, H2B orange">
     <figcaption>Time-lapse of histone tail positions from a long simulation of the nucleosome core particle on Anton. Simulations and image by Phu Tang; analysis by Prabir Khatua, with Abhik Ghosh Moulick, Rutika Patel, and Anjela Manandhar. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11181342/" target="_blank" rel="noopener">Khatua et al., J. Phys. Chem. B 2024</a></figcaption>
   </figure>
 
@@ -675,7 +675,7 @@ footer{border-top:1px solid var(--rule);margin-top:40px}
   document.querySelectorAll("[data-photo]").forEach(el=>{
     const img=new Image(); img.alt="";
     img.onload=()=>{el.textContent="";el.appendChild(img)};
-    img.src="images/"+el.dataset.photo+".jpg";
+    img.src=el.dataset.photo+".jpg";
   });
   /* ---------- chromatin plate ---------- */
   const cv=document.getElementById("plate");
