@@ -147,6 +147,10 @@ figcaption{font-size:12.5px;font-style:italic;color:var(--muted);margin-top:8px}
 .tool h3{font-size:20px;margin-top:4px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
 .chips li{font-family:var(--mono);font-size:12.5px;padding:5px 10px;border:1px solid var(--rule);border-radius:2px;color:var(--muted)}
+.chips li:has(a){padding:0}
+.chips a{display:block;padding:5px 10px;color:var(--muted);border:0}
+.chips a:hover{color:var(--accent)}
+.chips li:hover{border-color:var(--accent)}
 
 /* contact */
 .addr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;font-size:15.5px}
@@ -435,7 +439,7 @@ footer{border-top:1px solid var(--rule);margin-top:40px}
   </table></div>
 
   <h2>Simulation engines we use</h2>
-  <ul class="chips"><li>GROMACS</li><li>AMBER</li><li>NAMD</li><li>LAMMPS</li><li>Anton 3</li><li>SIRAH</li><li>Martini 3</li></ul>
+  <ul class="chips"><li><a href="https://www.gromacs.org" target="_blank" rel="noopener">GROMACS</a></li><li><a href="https://ambermd.org" target="_blank" rel="noopener">AMBER</a></li><li><a href="https://www.ks.uiuc.edu/Research/namd/" target="_blank" rel="noopener">NAMD</a></li><li><a href="https://www.lammps.org" target="_blank" rel="noopener">LAMMPS</a></li><li><a href="https://www.psc.edu/resources/anton/" target="_blank" rel="noopener">Anton 3</a></li><li><a href="https://www.sirahff.com" target="_blank" rel="noopener">SIRAH</a></li><li><a href="https://cgmartini.nl" target="_blank" rel="noopener">Martini 3</a></li></ul>
 </section>
 
 <!-- JOIN -->
