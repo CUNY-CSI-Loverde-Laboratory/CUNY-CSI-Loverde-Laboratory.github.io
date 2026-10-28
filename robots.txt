@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cuny-csi-loverde-laboratory.github.io/sitemap.xml
