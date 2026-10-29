@@ -109,13 +109,13 @@ figcaption{font-size:12.5px;font-style:italic;color:var(--muted);margin-top:8px}
 .cv{font-size:14.5px;color:var(--muted);display:grid;gap:4px;margin:0;padding:0;list-style:none}
 .roster{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 32px}
 .person.noimg{display:block}
-.person{min-width:0;display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:start}
-.portrait{width:96px;aspect-ratio:4/5;border-radius:3px;background:var(--tint);border:1px solid var(--rule);overflow:hidden;display:grid;place-items:center;font-family:var(--serif);font-size:26px;color:var(--accent)}
+.person{min-width:0;display:grid;grid-template-columns:132px 1fr;gap:16px;align-items:start}
+.portrait{width:132px;aspect-ratio:4/5;border-radius:3px;background:var(--tint);border:1px solid var(--rule);overflow:hidden;display:grid;place-items:center;font-family:var(--serif);font-size:26px;color:var(--accent)}
 .portrait img,.avatar img{width:100%;height:100%;object-fit:cover;display:block}
 .group{margin:8px 0 0}
 .group .ph{width:100%;aspect-ratio:1280/556;max-width:100%;background:var(--tint);border:1px dashed var(--rule);border-radius:4px;display:grid;place-items:center;color:var(--muted);font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;overflow:hidden}
 .group .ph img{width:100%;height:100%;object-fit:cover}
-.person .meta{font-size:14px;color:var(--muted);margin:0 0 6px}
+.person .meta{overflow-wrap:anywhere;font-size:14px;color:var(--muted);margin:0 0 6px}
 .person .proj{font-size:14.5px;margin:0}
 .tag{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:2px;background:var(--accent-soft);color:var(--accent);margin-left:6px;vertical-align:2px}
 .alumni{width:100%;border-collapse:collapse;font-size:14.5px}
@@ -297,7 +297,7 @@ footer{border-top:1px solid var(--rule);margin-top:40px}
   <div class="pi">
     <div class="avatar" data-photo="loverde" aria-hidden="true">SL</div>
     <div>
-      <h3 style="font-size:22px">Sharon M. Loverde</h3>
+      <h3 style="font-size:22px">Sharon M. Loverde</h3><p class="meta" style="font-size:14px;color:var(--muted);margin:0 0 6px"><a href="mailto:sharon.loverde@csi.cuny.edu">sharon.loverde@csi.cuny.edu</a></p>
       <p class="role">Professor of Chemistry, College of Staten Island<br>Doctoral Faculty in Chemistry, Biochemistry, and Physics, CUNY Graduate Center</p>
       <div class="links" style="margin:0 0 12px"><a href="http://scholar.google.com/citations?user=6P9aKHIAAAAJ" target="_blank" rel="noopener">Google Scholar</a><a href="https://github.com/CUNY-CSI-Loverde-Laboratory" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/sharon-loverde-370b706/" target="_blank" rel="noopener">LinkedIn</a><a href="https://x.com/sloverde" target="_blank" rel="noopener">Twitter</a><a href="https://orcid.org/0000-0002-7643-6498" target="_blank" rel="noopener">ORCID</a><a href="mailto:sharon.loverde@csi.cuny.edu">Email</a></div>
       <ul class="cv">
