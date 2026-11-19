@@ -100,6 +100,8 @@ figcaption{font-size:12.5px;font-style:italic;color:var(--muted);margin-top:8px}
 /* news */
 .news{list-style:none;padding:0;margin:0;display:grid;gap:12px}
 .news li{display:grid;grid-template-columns:92px 1fr;gap:16px;font-size:15.5px}
+.newsphoto{margin:10px 0 4px;max-width:640px}
+.newsphoto img{display:block;width:100%;height:auto;border-radius:4px}
 .news time{font-family:var(--mono);font-size:12.5px;color:var(--muted);padding-top:3px;font-variant-numeric:tabular-nums}
 
 /* people */
@@ -113,7 +115,7 @@ figcaption{font-size:12.5px;font-style:italic;color:var(--muted);margin-top:8px}
 .portrait{width:180px;aspect-ratio:4/5;border-radius:3px;background:var(--tint);border:1px solid var(--rule);overflow:hidden;display:grid;place-items:center;font-family:var(--serif);font-size:26px;color:var(--accent)}
 .portrait img,.avatar img{width:100%;height:100%;object-fit:cover;display:block}
 .group{margin:8px 0 0}
-.group .ph{width:100%;aspect-ratio:1280/556;max-width:100%;background:var(--tint);border:1px dashed var(--rule);border-radius:4px;display:grid;place-items:center;color:var(--muted);font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;overflow:hidden}
+.group .ph{width:100%;aspect-ratio:1920/1200;max-width:100%;background:var(--tint);border:1px dashed var(--rule);border-radius:4px;display:grid;place-items:center;color:var(--muted);font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;overflow:hidden}
 .group .ph img{width:100%;height:100%;object-fit:cover}
 .person .meta{overflow-wrap:anywhere;font-size:14px;color:var(--muted);margin:0 0 6px}
 .person .proj{font-size:14.5px;margin:0}
@@ -290,7 +292,7 @@ footer{border-top:1px solid var(--rule);margin-top:40px}
   <h1>The group</h1>
   <figure class="group">
     <div class="ph" data-photo="group">Group photo</div>
-    <figcaption>July 2026, Yuya Qiu's farewell picnic on Staten Island. From left: Prisca Baah, Rutika Patel (alumna), Julie Liu, Mike Emmanuel, Joel Gallardo, Sharon Loverde, Yiheng Wu (visiting for the day), Quan Tang, Yuya Qiu.</figcaption>
+    <figcaption>November 2026, on the CSI campus. From left: Sharon Loverde, Prisca Baah, Tania Rajpersaud, Joel Gallardo, Julie Liu, Quan Tang, Mike Emmanuel.</figcaption>
   </figure>
 
   <h2>Principal investigator</h2>
@@ -545,6 +547,8 @@ footer{border-top:1px solid var(--rule);margin-top:40px}
     <li><time>Nov 2026</time><span>Dr. Gervasio Zaldivar (de Pablo Lab, NYU) gives a guest lecture in CHEM 73000 Polymer Chemistry, &ldquo;How to Make Polymers Machine-Readable: An Introduction to <a href="https://doi.org/10.26434/chemrxiv.15007504/v1" target="_blank" rel="noopener">G2RINS</a>,&rdquo; with a <a href="https://github.com/sloverde/CHEM73000-G2RINS-HandsOn" target="_blank" rel="noopener">hands-on Colab session</a> for students.</span></li>
     <li><time>Oct 2026</time><span>Prof. Loverde gave a talk, <a href="https://cg-ml-2026.sciencesconf.org/data/pages/abstract_book_v3.pdf#page=11" target="_blank" rel="noopener">&ldquo;Rational Design of Anti-Cancer Drug Loading in Peptide Coacervates Using Interfacial Structure from Martini&nbsp;3,&rdquo;</a> presenting Tania Rajpersaud's work, and Joel Gallardo presented a poster at the workshop <a href="https://cg-ml-2026.sciencesconf.org/" target="_blank" rel="noopener"><em>Coarse-Graining in the Age of Machine Learning and Molecular Design</em></a> at ENS de Lyon.</span></li>
     <li><time>16 Oct 2026</time><span>Julie Liu and Tania Rajpersaud presented posters at the 4th Annual <a href="https://www.nanobionyc.com/4th-annual-symposium" target="_blank" rel="noopener">NanoBioNYC Symposium</a>. <a href="https://www.nanobionyc.com/2026-poster-session" target="_blank" rel="noopener">Read their abstracts</a>.</span></li><li><time>2026</time><span>Rutika Patel started a postdoc with <a href="https://wp.nyu.edu/labjonesy/" target="_blank" rel="noopener">Prof. Alisha Jones</a> at NYU, working on RNA.</span></li>
+    <li><time>July 2026</time><span>Picnic for Yuya Qiu, visiting PhD student from the lab of <a href="https://www.researchgate.net/profile/Emmanuelle-Bignon" target="_blank" rel="noopener">Emmanuelle Bignon</a> (CNRS), on Staten Island.
+      <figure class="newsphoto"><img src="picnic-2026.jpg" alt="Group photo at the picnic for Yuya Qiu, July 2026" loading="lazy"><figcaption>From left: Prisca Baah, Rutika Patel (alumna), Julie Liu, Mike Emmanuel, Joel Gallardo, Sharon Loverde, Yiheng Wu (visiting for the day), Quan Tang, Yuya Qiu.</figcaption></figure></span></li>
     <li><time>2026</time><span>Julie Liu and Quan Tang joined the group.</span></li>
     <li><time>2026</time><span>Prof. Loverde and Prisca visited Prof. <a href="https://www.researchgate.net/profile/Emmanuelle-Bignon" target="_blank" rel="noopener">Emmanuelle Bignon</a> in Nancy to discuss nucleosomes, then spoke at the CECAM workshop <a href="https://www.cecam.org/workshop-details/decoding-allostery-in-protein-nucleic-acid-complexes-the-ai-revolution-1527" target="_blank" rel="noopener"><em>Decoding Allostery in Protein–Nucleic Acid Complexes: The AI Revolution</em></a> in Paris. Prof. Loverde gave the talk <a href="https://www.cecam.org/workshop-details/decoding-allostery-in-protein-nucleic-acid-complexes-the-ai-revolution-1527#program-1527" target="_blank" rel="noopener">&ldquo;When DNA Breathes: Sequence-Dependent Allostery in Nucleosome Dynamics and Transcription Factor Binding,&rdquo;</a> and Prisca Baah presented <a href="https://www.cecam.org/workshop-details/decoding-allostery-in-protein-nucleic-acid-complexes-the-ai-revolution-1527#program-1527" target="_blank" rel="noopener">&ldquo;Dynamic effects of oncogenic mutations in the tail and core regions of the nucleosome core particle.&rdquo;</a></span></li>
     <li><time>2026</time><span>Rutika Patel was recognized for her thesis at the Graduate Center's <a href="https://www.gc.cuny.edu/provosts-office/inside-graduate-center-dissertation-showcase" target="_blank" rel="noopener"><em>Inside the Graduate Center: A Dissertation Showcase</em></a>.</span></li>
