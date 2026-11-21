@@ -674,14 +674,18 @@ footer{border-top:1px solid var(--rule);margin-top:40px}
   </div>
 </footer>
 
+<script data-goatcounter="https://loverdelab.goatcounter.com/count" data-goatcounter-settings='{"no_onload":true}' async src="//gc.zgo.at/count.js"></script>
 <script>
 (function(){
   const views=["home","research","people","publications","code","teaching","outreach","news","funding","join","contact"];
+  let gcDone=false,gcPending=null;
+  window.addEventListener("load",()=>{try{if(!gcDone&&window.goatcounter&&window.goatcounter.count){window.goatcounter.count({path:"/"+(gcPending||"home"),title:gcPending||"home"});gcDone=true}}catch(e){}});
   function show(){
     let h=(location.hash||"#home").slice(1); if(!views.includes(h)) h="home";
     views.forEach(v=>{document.getElementById("v-"+v).hidden=(v!==h)});
     document.querySelectorAll("nav a").forEach(a=>{a.getAttribute("href")==="#"+h?a.setAttribute("aria-current","page"):a.removeAttribute("aria-current")});
     window.scrollTo(0,0);
+    try{if(window.goatcounter&&window.goatcounter.count){window.goatcounter.count({path:"/"+h,title:h});gcDone=true}else{gcPending=h}}catch(e){}
     if(h==="home") requestAnimationFrame(draw);
   }
   window.addEventListener("hashchange",show);
