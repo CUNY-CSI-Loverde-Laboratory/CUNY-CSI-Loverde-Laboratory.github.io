@@ -23,6 +23,7 @@
   --tint:#f4f7f9;
   --accent:#0b5f86;      /* deep harbor blue */
   --accent-soft:#d8e9f2;
+  --nuc-slate:#3b5068; --nuc-red:#d4172c; --nuc-purple:#7a2fbd; --nuc-green:#1a8a45;
   --h3:#4fb0c2; --h4:#e05ab2; --h2a:#f2b53f; --h2b:#f08852; --dna:#2d3a48; --dna2:#8aa0b5; --bead:#c7d3de;
   --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   --serif:"IBM Plex Serif",Georgia,serif;
@@ -32,11 +33,13 @@
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#0f1317; --fg:#e7ebef; --muted:#9aa5b1; --rule:#252c34; --tint:#161c22;
   --accent:#6cb8de; --accent-soft:#163142;
+  --nuc-slate:#8fa8c0; --nuc-red:#ef4a5c; --nuc-purple:#a566e0; --nuc-green:#3fc274;
   --h3:#62c0d0; --h4:#ec74c2; --h2a:#f5c35a; --h2b:#f59a68; --dna:#dfe7ee; --dna2:#7690a8; --bead:#24303b;
   color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#0f1317; --fg:#e7ebef; --muted:#9aa5b1; --rule:#252c34; --tint:#161c22;
   --accent:#6cb8de; --accent-soft:#163142;
+  --nuc-slate:#8fa8c0; --nuc-red:#ef4a5c; --nuc-purple:#a566e0; --nuc-green:#3fc274;
   --h3:#62c0d0; --h4:#ec74c2; --h2a:#f5c35a; --h2b:#f59a68; --dna:#dfe7ee; --dna2:#7690a8; --bead:#24303b;
   color-scheme:dark}
 
@@ -78,7 +81,7 @@ figcaption{font-size:12.5px;font-style:italic;color:var(--muted);margin-top:8px}
 /* research list */
 .areas{display:grid;gap:22px;margin:0;padding:0;list-style:none}
 .areas li{display:grid;grid-template-columns:14px 1fr;gap:14px}
-.swatch{width:10px;height:10px;border-radius:50%;margin-top:9px}
+.swatch{width:12px;height:12px;border-radius:50%;margin-top:8px}
 .areas p{margin:0;color:var(--fg)}
 .areas strong{font-weight:600}
 .method{font-family:var(--mono);font-size:12.5px;color:var(--muted);margin-top:6px!important;letter-spacing:.01em}
@@ -233,10 +236,10 @@ footer{border-top:1px solid var(--rule);margin-top:40px}
   <h2>Research</h2>
   <p class="more"><a href="#research">View detailed research →</a></p>
   <ul class="areas">
-    <li><i class="swatch" style="background:var(--h3)"></i><p><strong>Nucleosome dynamics.</strong> How histone tails, DNA sequence, and the variant H2A.Z shape breathing, sliding, and unwrapping of nucleosomal DNA.</p></li>
-    <li><i class="swatch" style="background:var(--h2b)"></i><p><strong>Allostery and oncogenic mutations.</strong> Mapping how a mutation at one site changes motion far away, using our CONDACT conditional-activity framework.</p></li>
-    <li><i class="swatch" style="background:var(--h2a)"></i><p><strong>Peptide condensates.</strong> How charge and chirality patterning drive coacervate formation, and how drugs partition into the droplets.</p></li>
-    <li><i class="swatch" style="background:var(--h4)"></i><p><strong>Multiscale models.</strong> Martini&nbsp;3 models for anti-cancer drugs and other small molecules, and chirality-aware peptide models in collaboration with the SIRAH developers.</p></li>
+    <li><i class="swatch" style="background:var(--nuc-slate)"></i><p><strong>Nucleosome dynamics.</strong> How histone tails, DNA sequence, and the variant H2A.Z shape breathing, sliding, and unwrapping of nucleosomal DNA.</p></li>
+    <li><i class="swatch" style="background:var(--nuc-red)"></i><p><strong>Allostery and oncogenic mutations.</strong> Mapping how a mutation at one site changes motion far away, using our CONDACT conditional-activity framework.</p></li>
+    <li><i class="swatch" style="background:var(--nuc-purple)"></i><p><strong>Peptide condensates.</strong> How charge and chirality patterning drive coacervate formation, and how drugs partition into the droplets.</p></li>
+    <li><i class="swatch" style="background:var(--nuc-green)"></i><p><strong>Multiscale models.</strong> Martini&nbsp;3 models for anti-cancer drugs and other small molecules, and chirality-aware peptide models in collaboration with the SIRAH developers.</p></li>
   </ul>
 
   <blockquote style="margin:2em 0 1.6em;padding:.3em 0 .3em 1.1em;border-left:3px solid var(--accent);color:var(--muted);font-style:italic">&ldquo;DNA is a code of four letters; proteins are made up of amino acids which come in 20 forms. So the ribosome is a very clever machine that reads one language and operates in another.&rdquo;<footer style="font-style:normal;font-size:.9em;margin-top:.5em">&mdash; <a href="https://en.wikipedia.org/wiki/Ada_Yonath" target="_blank" rel="noopener">Ada Yonath</a>, Nobel Prize in Chemistry 2009</footer></blockquote><h2>Recent news</h2>
